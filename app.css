@@ -1,0 +1,11 @@
+body { margin: 0; }
+.test {
+    border: 1px firebrick solid;
+    margin: 20px;
+    text-align: center;
+}
+.test ul { padding: 0; }
+.test ul li { 
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
