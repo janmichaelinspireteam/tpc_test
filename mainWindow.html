@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html onmousemove="logCoords(event)">
+<html>
     <head>
         <title>TPC NextGen Code Test</title>
         <link rel="stylesheet" href="./app.css">
     </head>
     <body>
-        <div class="test" onmousemove="showCoords(event)">
+        <div id="CoordsContainer" class="container">
             <h3>List:</h3>
             <ul id="CoordsList"></ul>
         </div>
     </body>
-    <script src="./src/coords.js"></script>
+    <script>
+        require('./dist/renderList.js');
+    </script>
 </html>

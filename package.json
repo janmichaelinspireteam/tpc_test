@@ -7,12 +7,14 @@
     "build": "tsc",
     "watch": "tsc -w",
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "start": "npm run build && electron ./src/app.js"
+    "start": "npm run build && electron ./dist/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "tslint": "^5.20.0"
+  },
   "dependencies": {
     "electron": "^7.0.0",
     "typescript": "^3.6.4"
