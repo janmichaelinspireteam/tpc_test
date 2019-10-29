@@ -42,13 +42,16 @@ export default class Main {
 		let newY: number = 0;
 		newX = x;
 		newY = y;
+
 		if (newX !== Main.oldCx && newY !== Main.oldCy) {
 			coordinates.coordX = newX;
 			coordinates.coordY = newY;
 			const didNotHitBounds = Main.checkBoundary(coordinates.coordX, coordinates.coordY, width, height);
+
 			if (didNotHitBounds) {
 				Main.mainWindow.webContents.send('get-coordinates', { x: newX, y: newY });
 			}
+
 			Main.printLogs(coordinates.coordX, coordinates.coordY);
 		}
 		Main.oldCx = newX;
